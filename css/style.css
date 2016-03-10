@@ -1,0 +1,18 @@
+header.intro {
+    background: gray;
+}
+
+section#about{
+	background: #ccc;
+	height: 600px;
+}
+
+section#download{
+	background: #ddd;
+	height: 600px;
+}
+
+section#contact{
+	background: #779;
+	height: 600px;
+}
