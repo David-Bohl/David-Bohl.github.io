@@ -1,35 +1,56 @@
-header.intro {
-    background: gray;
-}
+/*-------------CLASSES-----------------*/
+header.intro { background: gray; }
 
+
+/*---------------IDs-------------------*/
 section#about{
 	background: #ccc;
 	height: 600px;
 }
 
-section#code{
-	background: #779;
-	height: 600px;
+section#code{ height: 600px; }
+
+section#code li{
+	color: #42dca3;
+	font-size: 18px;
 }
 
-section#music{
-	background: #ccc;
-	height: 600px;
+/*--------------------------------MEDIA QUERIES----------------------------------*/
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+.album-cover{
+	width: 250px;
+	height: 250px;	
+	margin: 20px;	
 }
 
-
-
-section#contact{
-/*	background: #779;*/
-	height: 600px;
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+	.album-cover{
+		width:500px;
+		height:500px;
+	}
 }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+	.album-cover{
+		width: 300px;
+		height: 300px;		
+	}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	.album-cover{
+		width: 360px;
+		height: 360px;		
+	}
+ }
 
 .banner-social-buttons .btn {
 	animation: glowing 2s infinite;
 }
-/*.banner-social-buttons .btn span {
-	animation: glowing 2s infinite;	
-}*/
 
 @keyframes glowing {
 	0% { 
