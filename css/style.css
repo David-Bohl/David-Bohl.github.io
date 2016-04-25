@@ -40,7 +40,7 @@
 }
 
 #marble {
-  position: absolute;
+  position: fixed;
   top: calc(50% - 150px);
   left: calc(50% - 150px);
   width: 300px;
@@ -57,6 +57,11 @@
     -10px 0 80px #f0f,
     10px 0 80px #0ff;
 }
+#marble a.btn{
+  width: 300px;
+  height: 300px;
+}
+
 
 #orb {
   position: absolute;
@@ -171,24 +176,24 @@ section#contact{
 /*--------------------------------MEDIA QUERIES----------------------------------*/
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
-.album-cover{
-	width: 250px;
-	height: 250px;	
-	margin: 20px;	
-}
-#orb {
-  position: absolute;
-  top: calc(50% - 20px);
-  left: calc(50% - 20px);
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 1);
-  box-shadow:
-    0 0 60px 30px rgba(255, 255, 255,1),
-    0 0 100px 60px rgba(255, 0, 255,1),
-    0 0 140px 90px rgba(0, 255, 255,1);
-}
+  .album-cover{
+  	width: 250px;
+  	height: 250px;	
+  	margin: 20px;	
+  }
+  #orb {
+    position: absolute;
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow:
+      0 0 60px 30px rgba(255, 255, 255,1),
+      0 0 100px 60px rgba(255, 0, 255,1),
+      0 0 140px 90px rgba(0, 255, 255,1);
+  }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
 	.album-cover{
@@ -216,6 +221,7 @@ section#contact{
 		width: 300px;
 		height: 300px;		
 	}
+
 }
 
 /* Large devices (large desktops, 1200px and up) */
