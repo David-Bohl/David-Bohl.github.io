@@ -12,7 +12,7 @@ $( document ).ready(function() {
   //   $(activeSection).find('h2').addClass('active');
   // });
 
-
+  //test
 
   
   //change glow with distance
@@ -98,6 +98,9 @@ $( document ).ready(function() {
     //original colors
       //$("header.intro,section#about,section#code,section#music,section#contact").css('background', 'rgb('+ parseInt(scroll/10)+','+parseInt(scroll/10)+','+parseInt(scroll/5)+')');
 
+    // fade marble on scroll
+    // $(#"marble").css(
+    //   );
 
   }); //end scroll
 
