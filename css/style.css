@@ -1,62 +1,8 @@
-.viewport{
-	min-height:100%;
-}
+.viewport{ min-height:100%; }
 
-.content-section{
-	padding-top: 200px;
-}
-.btn-default:hover{
-	box-shadow: 0px 0px 13px 1px rgba(66,220,163,0.66); 
-	/*text-shadow: 0px 0px 13px    rgba(66,220,163,0.66);*/ 
-}
-/*#sun { 
-  position: fixed;
-  top: 300px;
-  left: 40px;
+.content-section{ padding-top: 200px; }
 
-  background: yellow;
-  height: 100px;
-  width: 100px;
-  border-radius: 50px;
-  margin: 20px;
-  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
-  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
-  box-shadow: 0px 0px 50px 10px yellow; 
-
-}*/
-#sun {
-  position: fixed;
-  top: 300px;
-  left: 150px;
-
-  width: 30px;
-  height: 30px;
-  margin: 50px;
-  border-radius: 50%;
-  background-color: #fff;
-  box-shadow: 0 0 80px 40px #ddd, 0 0 200px 100px #ff0;
-/*  transition: box-shadow 4s ease-out;
-  animation: spin 16s linear infinite;*/
-}
-
-#marble {
-  position: absolute;
-  top: calc(50% - 150px);
-  left: calc(50% - 150px);
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  /*background-color: red;*/
-  box-shadow:
-    inset 0 0 50px #fff,
-    inset 20px 0 80px #f0f,
-    inset -20px 0 80px #0ff,
-    inset 20px 0 300px #f0f,
-    inset -20px 0 300px #0ff,
-    0 0 50px #fff,
-    -10px 0 80px #f0f,
-    10px 0 80px #0ff;
-}
+.btn-default:hover{ box-shadow: 0px 0px 13px 1px rgba(66,220,163,0.66); }
 
 #orb {
   position: absolute;
@@ -66,44 +12,25 @@
   height: 40px;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 1);
-/*  box-shadow:
-    0 0 60px 30px rgba(255, 255, 255,1),
-    0 0 100px 60px rgba(255, 0, 255,1),
-    0 0 140px 90px rgba(0, 255, 255,1);*/
 }
+
 #orb a.btn{
   width: 40px;
   height: 40px;
 }
 
-/*#moon { 
-	width: 80px; 
-	height: 80px; 
-	border-radius: 50%; 
-	box-shadow: 15px 15px 0 0 
-	red; 
-}*/
+ul{ list-style-type: none; }
 
+#projects{ margin: 20px 20px 20px -20px; }
 
-
-ul{
-	list-style-type: none;
-}
-#projects{
-	margin: 20px 20px 20px -20px;
-}
-p{
-	margin-top: 50px;
-}
+p{ margin-top: 50px; }
 
 h2.btn-default:hover{
   border: 1px solid #42dca3;
   color: #42dca3;
   background-color: transparent;
   box-shadow: none;
-  /*text-shadow: none;*/
 }
-
 
 h2.active.btn-default,
 h2.active.btn-default:hover{
@@ -112,61 +39,16 @@ h2.active.btn-default:hover{
   color: #000;
   background-color: #42dca3;
   box-shadow: 0px 0px 13px 1px rgba(66,220,163,0.66); 
-	/*text-shadow: 0px 0px 13px    rgba(66,220,163,0.66); */
-
 }
-
-/*h2.active.btn-default:hover{
-    background-color: red;
-}*/
-
-
-/*.glow{
-	box-shadow: 0px 0px 13px 1px rgba(66,220,163,0.66); 
-	text-shadow: 0px 0px 13px    rgba(66,220,163,0.66); 
-
-}*/
-
-
 
 /*------------------------HEADER----------------------*/
-header.intro { 
-	background: black; 
-	/*background: rgb(127, 127, 255);*/
-}
+header.intro { background: black; }
 
-/*------------------------ABOUT----------------------*/
-section#about{
-	/*background: #ccc;*/
-	/*margin-left: 0px;
-	margin-right: 0px;*/
-	/*height: 600px;*/
-}
-
-
-
-
-/*------------------------CODE----------------------*/
-section#code{ 
-	/*height: 600px; */
-	/*background: #aaa;*/
-}
-
-section#code li{
-	/*color: #42dca3;*/
-	font-size: 18px;
-}
+/*-------------------------CODE-----------------------*/
+section#code li{ font-size: 18px; }
 
 /*------------------------MUSIC----------------------*/
-section#music{
-	/*background: #333;*/
-	padding-top: 150px;
-}
-
-/*------------------------CONTACT----------------------*/
-section#contact{
-	/*background: #888;*/
-}
+section#music{ padding-top: 150px; }
 
 /*--------------------------------MEDIA QUERIES----------------------------------*/
 /* Extra small devices (phones, less than 768px) */
@@ -186,8 +68,7 @@ section#contact{
   background-color: rgba(255, 255, 255, 1);
   box-shadow:
     0 0 60px 30px rgba(255, 255, 255,1),
-    0 0 100px 60px rgba(255, 0, 255,1),
-    0 0 140px 90px rgba(0, 255, 255,1);
+    0 0 140px 90px rgba(66,220,163,1);
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
@@ -205,8 +86,7 @@ section#contact{
     background-color: rgba(255, 255, 255, 1);
     box-shadow:
       0 0 60px 30px rgba(255, 255, 255,1),
-      0 0 100px 60px rgba(255, 0, 255,1),
-      0 0 140px 90px rgba(0, 255, 255,1);
+      0 0 140px 90px rgba(66,220,163,1);
   }
 }
 
@@ -225,37 +105,3 @@ section#contact{
 		height: 360px;		
 	}
  }
-
-/*.banner-social-buttons .btn{
-	box-shadow: 0px 0px 13px 1px rgba(66,220,163,0.66); 
-	text-shadow: 0px 0px 13px    rgba(66,220,163,0.66); 
-}*/
-
-/*
-.banner-social-buttons .btn {
-	animation: glowing 2s infinite;
-}
-
-@keyframes glowing {
-	0% { 
-		box-shadow: 0px 0px 13px 1px rgba(66,220,163,0.33); 
-		text-shadow: 0px 0px 13px  rgba(66,220,163,0.33);
-	}
-	25% { 
-		box-shadow: 0px 0px 13px 1px rgba(66,220,163,0.66); 
-		text-shadow: 0px 0px 13px rgba(66,220,163,0.66); 
-	}
-	50% { 
-		box-shadow: 0px 0px 13px 1px rgba(66,220,163,1); 
-		text-shadow: 0px 0px 13px rgba(66,220,163,1); 
-	}
-	75% { 
-		box-shadow: 0px 0px 13px 1px rgba(66,220,163,0.66); 
-		text-shadow: 0px 0px 13px rgba(66,220,163,0.66); 
-	}
-	100% { 
-		box-shadow: 0px 0px 13px 1px rgba(66,220,163,0.33); 
-		text-shadow: 0px 0px 13px rgba(66,220,163,0.33); 
-	}
-};*/
-
