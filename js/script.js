@@ -11,16 +11,18 @@ $( document ).ready(function() {
 
   //mousemove
   $(document).mousemove(function(e) {
+
     distance = calculateDistance($element, e.pageX, e.pageY);
     var glowAmount = ( 1-(distance/500) );
 
     $("#orb").css({
       'box-shadow' : "0 0 60px 30px rgba(255, 255, 255,"+glowAmount+"), 0 0 140px 90px rgba(66, 220, 163,"+glowAmount+")"
-      ,'background-color' : "rgba(255, 255, 255,"+glowAmount+")"
+      ,'background-color' : "rgba(255, 255, 255,"+glowAmount*1.5+")"
+
     });    
   });// end mousemove
 
-
+  //scroll
   $(window).scroll(function() {     
     var scroll = $(window).scrollTop();
     
