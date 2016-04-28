@@ -13,7 +13,9 @@ $( document ).ready(function() {
   $(document).mousemove(function(e) {
 
     distance = calculateDistance($element, e.pageX, e.pageY);
-    var glowAmount = ( 1-(distance/500) );
+    var glowAmount = ( 1-(distance/750) );
+
+    console.log(glowAmount);
 
     $("#orb").css({
       'box-shadow' : "0 0 60px 30px rgba(255, 255, 255,"+glowAmount+"), 0 0 140px 90px rgba(66, 220, 163,"+glowAmount+")"
