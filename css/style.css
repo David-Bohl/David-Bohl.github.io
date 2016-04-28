@@ -43,9 +43,7 @@ h2.active.btn-default:hover{
 }
 
 header.intro { background: black; }
-
 section#code li{ font-size: 18px; }
-
 section#music{ padding-top: 150px; }
 
 /*--------------------------------MEDIA QUERIES----------------------------------*/
@@ -56,38 +54,13 @@ section#music{ padding-top: 150px; }
 	height: 250px;	
 	margin: 20px;	
 }
-/*header.intro { background: red; }*/
-/*#orb {
-  position: absolute;
-  top: calc(50% - 20px);
-  left: calc(50% - 20px);
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 1);
-  box-shadow:
-    0 0 60px 30px rgba(255, 255, 255,1),
-    0 0 140px 90px rgba(66,220,163,1);
-}*/
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
 	.album-cover{
 		width:500px;
 		height:500px;
 	}
-  
-/*  #orb {
-    position: absolute;
-    top: calc(50% - 20px);
-    left: calc(50% - 20px);
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 1);
-    box-shadow:
-      0 0 60px 30px rgba(255, 255, 255,1),
-      0 0 140px 90px rgba(66,220,163,1);
-  }*/
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -96,7 +69,6 @@ section#music{ padding-top: 150px; }
 		width: 300px;
 		height: 300px;		
 	}
-
 }
 
 /* Large devices (large desktops, 1200px and up) */

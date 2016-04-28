@@ -1,36 +1,28 @@
 $( document ).ready(function() {
    
+  //change glow with mouse distance
   var docHeight = $(document).height(); 
-  //change glow with distance
-  //calculate distance
+
+  //calculate mouse distance
   var mX, mY, distance,$element  = $('#orb');
 
   function calculateDistance(elem, mouseX, mouseY) {
     return Math.floor(Math.sqrt(Math.pow(mouseX - (elem.offset().left+(elem.width()/2)), 2) + Math.pow(mouseY - (elem.offset().top+(elem.height()/2)), 2)));
   }
 
-
-
   if (window.matchMedia("(min-width: 992px)").matches) {
-
+    
     //mousemove
     $(document).mousemove(function(e) {
-
-      console.log("mousemove ran");
-
       distance = calculateDistance($element, e.pageX, e.pageY);
       var glowAmount = ( 1-(distance/750) );
-
-      console.log(glowAmount);
-
       $("#orb").css({
         'box-shadow' : "0 0 60px 30px rgba(255, 255, 255,"+glowAmount+"), 0 0 140px 90px rgba(66, 220, 163,"+glowAmount+")"
         ,'background-color' : "rgba(255, 255, 255,"+glowAmount*1.5+")"
-
       });    
     });// end mousemove
 
-  }
+  }// end matchmedia
 
   //scroll
   $(window).scroll(function() {     
