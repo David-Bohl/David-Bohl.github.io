@@ -11,7 +11,7 @@ $( document ).ready(function() {
 
 
 
-  if (window.matchMedia("(min-width: 992px)").matches) {
+ // if (window.matchMedia("(min-width: 992px)").matches) {
 
     //mousemove
     $(document).mousemove(function(e) {
@@ -28,7 +28,7 @@ $( document ).ready(function() {
       });    
     });// end mousemove
 
-  }
+ // }
 
   //scroll
   $(window).scroll(function() {     
