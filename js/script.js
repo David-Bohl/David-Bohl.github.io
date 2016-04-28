@@ -11,10 +11,12 @@ $( document ).ready(function() {
 
 
 
- // if (window.matchMedia("(min-width: 992px)").matches) {
+  if (window.matchMedia("(min-width: 992px)").matches) {
 
     //mousemove
     $(document).mousemove(function(e) {
+
+      console.log("mousemove ran");
 
       distance = calculateDistance($element, e.pageX, e.pageY);
       var glowAmount = ( 1-(distance/750) );
@@ -28,7 +30,7 @@ $( document ).ready(function() {
       });    
     });// end mousemove
 
- // }
+  }
 
   //scroll
   $(window).scroll(function() {     
